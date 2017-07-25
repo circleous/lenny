@@ -104,7 +104,7 @@ ears = [
 ]
 
 
-def lenny():
+def rand():
     mouth = random.choice(mouths)
     eyes_ = random.choice(eyes)
     ears_ = random.choice(ears)
@@ -122,3 +122,24 @@ def lenny():
     face = '{0}{1}{2}{3}{4}'
 
     return face.format(left_ear, left_eye, mouth, right_eye, right_ear)
+
+
+def fav(id=''):
+    id = id.lower()
+
+    if id == 'lenny':
+        return '( ͡° ͜ʖ ͡°)'
+    elif id == 'lenny2':
+        return '( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)'
+    elif id == 'poker':
+        return '¬_¬'
+    elif id == 'shrug':
+        return '¯\\_(ツ)_/¯'
+    elif id == 'tableflip':
+        return '(╯°□°）╯︵ ┻━┻'
+    elif id == 'tableflip2':
+        return '┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻'
+    elif id == 'yeay':
+        return '(づ｡◕‿‿◕｡)づ'
+    else:
+        return None
